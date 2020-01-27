@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class DiceGamePig {
     public static void main(String[] args){
-        int i, dice1, dice2, score = 0;
+        int  dice1, dice2, score = 0;
         Random roll = new Random();
         System.out.println("Welcome! Let's Play Roll Dice! ");
         Scanner keyboard = new Scanner(System.in);
@@ -24,6 +24,8 @@ public class DiceGamePig {
              }
 
              if(score > 99){
+                 System.out.println("Your rolls " +dice1+ " & "+dice2);
+                 System.out.println("Score: "+score);
                  System.out.println("You have scored over 100");
                  System.out.println("Thank you for playing!");
                  break;
